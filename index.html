@@ -182,7 +182,13 @@ footer .copy{font-size:.75rem;color:var(--muted)}
 .ico-lg{width:1.5rem;height:1.5rem}
 .ico-sm{width:1rem;height:1rem}
 
-/* Spaces */
+/* Spaces *//* FUNDO AQUATICO GLOBAL */
+body::before{content:"";position:fixed;inset:0;z-index:-10;background-image:url("https://i.postimg.cc/94X2TStF/banner-hero-mundo-submerso.png");background-size:cover;background-position:center;background-attachment:fixed;opacity:.06;pointer-events:none}
+.bubbles-global{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+/* IMAGEM AUTORIDADE - maior */
+.img-frame img{width:100%;height:auto;min-height:400px;object-fit:cover}
+/* INFOGRAFICO - maior */
+.benefits-bg img{max-width:100% !important;width:100%}
 .mt-6{margin-top:1.5rem}.mt-4{margin-top:1rem}
 </style>
 
@@ -201,7 +207,7 @@ fbq('track', 'PageView');
 </script>
 <!-- End Meta Pixel Code -->
 </head>
-<body>
+<body><div class="bubbles-global" data-bubbles="40"></div>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=830815790084015&ev=PageView&noscript=1" /></noscript>
 
 <!-- HEADER -->
@@ -498,4 +504,5 @@ fbq('track', 'PageView');
 </script>
 </body>
 </html>
+
 
